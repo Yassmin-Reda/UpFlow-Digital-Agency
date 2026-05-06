@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Anton', sans-serif;
+
+}
+
+
+.orange {
+    color: #ff6709;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+nav {
+    background-color: rgb(9, 9, 9);
+    padding: 0 175px;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 190px;
+    position: relative;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+nav span {
+    font-size: 27px;
+    font-weight: 900;
+    color: #ff6709;
+}
+
+nav ul li:hover a {
+    color: #ff873d;
+
+}
+
+/* --------------------------- */
+.hero {
+    position: relative;
+    height: calc(100vh - 80px);
+    height: 90vh;
+    background: url(../img/hero.svg) center/cover no-repeat;
+}
+
+.layer {
+    position: relative;
+    width: 357px;
+    height: 445px;
+    border: 17px solid #FEFEFE33;
+    top: 85px;
+    left: 179px;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 185px;
+    left: 5px;
+    transform: translateY(-50%);
+    width: 580px;
+    height: 349px;
+    padding: 24px;
+    gap: 24px;
+    z-index: 2;
+}
+
+.badge {
+    font-size: 14px;
+    border-bottom: 4px solid #ff6709;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.hero-text-box h1 {
+    font-size: 54px;
+    line-height: 82px;
+    font-family: Dela Gothic One;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 900;
+    font-style: regular;
+    /* border-bottom: 2px solid #ff6709; */
+}
+
+.hero-text-box p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    font-weight: 900;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: 1px solid #FEFEFE33;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6709;
+    border-color: #ff6709e9;
+}
+
+.rect {
+    position: absolute;
+    background-color: #ff67098c;
+    right: 210px;
+    width: 323px;
+    height: 100%;
+    top: 0;
+    transform: skew(-13.5deg);
+    z-index: 1;
+
+}
+
+.rect2 {
+    position: absolute;
+    background-color: #ff6709;
+    height: 442px;
+    width: 244px;
+    transform: skewX(-13.5deg);
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    font-size: 18px;
+    /* rotate: 90deg; */
+    right: 25px;
+    top: 45%;
+    translate: -50% -50%;
+    z-index: 3;
+
+}
+
+.p {
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ---------------------------------------------------------- */
+.features {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 24px;
+    top: -70px;
+    left: 180px;
+    z-index: 5;
+    width: 1143px;
+    height: 144px;
+}
+
+.feature-card {
+    background-color: #484643;
+    width: 370px;
+    height: 144px;
+    border: 0.5px;
+    display: flex;
+    padding: 8px 32px 8px 8px;
+    gap: 16px;
+    /* align-items: center; */
+}
+
+.num-box {
+    background-color: #ff6709;
+    width: 97px;
+    height: 128px;
+    padding: 40px 32px;
+    gap: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.feature-text {
+    width: 199px;
+    height: 116px;
+    gap: 8px;
+}
+
+.feature-text h3 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Poppins;
+    margin-bottom: 8px;
+}
+
+.feature-text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+/*  -------------------------------------------------------------- */
+.about {
+    display: flex;
+    gap: 96px;
+    padding: 120px;
+    background: #050816;
+    color: #fff;
+}
+
+/* LEFT SIDE */
+.about-left {
+    position: relative;
+    width: 560px;
+    height: 530px;
+}
+
+/* triangle */
+.triangle {
+    position: absolute;
+    width: 485px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* image box */
+.person-box {
+    position: absolute;
+    width: 307px;
+    height: 431px;
+    top: 40px;
+    left: 196px;
+    z-index: 2;
+}
+
+.person-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* experience card */
+.exp-card {
+    position: absolute;
+    top: 255px;
+    left: -25px;
+    width: 283px;
+    height: 155px;
+    background: #484643;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 6px;
+    padding: 15px 15px 0 15px;
+}
+
+.title {
+    padding: 20px;
+    border: 2px solid #ff670972;
+}
+
+.title2 {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.title2 span {
+    width: 40px;
+    height: 40px;
+
+}
+
+.exp-card h3 {
+    font-size: 35px;
+    font-family: 500;
+    color: #ff6709;
+}
+
+.title p {
+    color: #9D9797;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+
+/* RIGHT */
+
+.about-right {
+    width: 430px;
+    height: 493px;
+    gap: 40px;
+}
+
+.small-title {
+    color: #ff6709;
+    width: 175px;
+    height: 30px;
+    /* font-size: 14px; */
+    gap: 4px;
+}
+
+.about-right h2 {
+    width: 430px;
+    height: 159px;
+    font-size: 42px;
+    font-weight: 400;
+    font-style: Regular;
+    font-family: Dela Gothic One;
+    margin: 20px 0;
+    line-height: 53px;
+}
+
+.desc {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: Medium;
+    font-family: Poppins;
+    margin-bottom: 20px;
+    width: 405px;
+    height: 60px;
+    line-height: 1.5;
+}
+
+.years {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.years span {
+    font-family: Dela Gothic One;
+    font-style: Regular;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 68px;
+    height: 68px;
+    width: 108px;
+}
+
+.years p {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    font-family: Poppins;
+    width: 283px;
+    height: 60px;
+    color: #969696;
+    line-height: 1.5;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.founder img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.founder div p {
+    margin: 5px 0;
+}
+
+.orange-btn {
+    background: #ff6709;
+    padding: 12px 28px;
+    border-radius: 25px;
+}
+
+/*  -------------------------------------------------------------- */
+.subscribe {
+    background: url(../img/about.jpg) top center / cover no-repeat;
+    background-attachment: fixed;
+    height: 325px;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.overlay h2 {
+    font-size: 32px;
+    color: #fff;
+}
+
+/*  -------------------------------------------------------------- */
+/*  TOP CARDS  */
+
+.top-cards {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: 428px;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: bold;
+    color: #fff;
+}
+
+
+/* ================= ORANGE STRIP ================= */
+.orange-strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 210px;
+    background: #ff6709;
+}
+
+.orange-strip span {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 82px;
+}
+
+.orange-strip .dot {
+    font-size: 12px;
+    color: #fff;
+}
+
+/* ================= SERVICES SECTION ================= */
+
+.services {
+    padding: 80px 10%;
+    text-align: center;
+    background: #0b0f1c;
+    color: #fff;
+}
+
+.services small {
+    color: #FF6709;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: Medium;
+    font-family: Poppins;
+}
+
+/* 
+.services .sevieces-title{
+    width: 646px;
+    height: 136px;
+    text-align: center;
+} */
+.services .sevieces-title h2 {
+    font-weight: 900;
+    font-size: 42px;
+    font-style: Regular;
+    font-family: Dela Gothic One;
+    margin-top: 10px;
+}
+
+.services .sevieces-title h2 span {
+    color: #ff6a00;
+}
+
+.services-boxes {
+    margin-top: 60px;
+    position: relative;
+    /* width:1044px; */
+    height: 200px;
+    display: flex;
+    /* grid-template-columns:repeat(4,1fr); */
+    gap: 48px;
+    /* top: 297px; */
+    left: 155px;
+}
+
+.service-box {
+    width: 225px;
+    height: 200px;
+    padding: 40px;
+    gap: 10px;
+    background-color: #2C2E33;
+    transition: 0.4s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    background: #181b26;
+}
+
+.service-box i {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service-box h4 {
+    color: #ff6a00;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: Medium;
+    font-family: Poppins;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------// */
+/*  Testimonials  */
+
+.testimonials {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.testimonials-title {
+    text-align: center;
+
+}
+
+.testimonials-title P {
+    color: #ff6a00;
+    margin-bottom: 10px;
+    gap: 4PX;
+    font-size: 20PX;
+}
+
+.testimonials-title h2 {
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+
+
+.testimonial-card {
+    width: 365px;
+    height: 215px;
+    display: flex;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 4px 40px rgba(0, 0, 0, 0.16);
+}
+
+.testimonial-card .image {
+    width: 50%;
+    height: 100%;
+}
+
+.testimonial-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-card .content {
+    width: 50%;
+    padding: 15px 15px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.stars i {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.stars span {
+    color: #FF6709;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.author h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF6709;
+}
+
+.author p {
+    margin: 0;
+    font-size: 12px;
+    color: #FF6709;
+}
+
+.corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #FF6709;
+}
+
+/*  Footer  */
+footer {
+    background-color: #1D1E22;
+    height: 397px;
+}
+
+.footer-container {
+    display: flex;
+    /* height: 149px; */
+    justify-content: space-between;
+    padding: 100px 110px;
+    gap: 150px;
+}
+
+.footer-about {
+    width: 380px;
+    gap: 16px;
+}
+
+.footer-about h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-family: Poppins;
+}
+
+.footer-about p {
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: Regular;
+    font-family: Poppins;
+}
+
+.footer-links {
+    display: flex;
+    gap: 64px;
+    width: 658px;
+}
+
+.footer-links div h4 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: Medium;
+    color: #FFFFFFCC;
+}
+
+.footer-links div ul {
+    list-style: none;
+    display: block;
+}
+
+.footer-links div ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-links div ul li i {
+    color: #FF6709;
+    margin-right: 10px;
+}
+
+.footer-links span {
+    margin-right: 5px;
+}
+
+.footer-bottom {
+    background-color: #FF6709;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #040505CC;
+}
